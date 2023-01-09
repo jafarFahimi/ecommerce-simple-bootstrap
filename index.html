@@ -10,6 +10,7 @@
     <title>Simple Ecommerce Website by Bootstrap 5</title>
   </head>
   <body>
+    <!-- top navbar section -->
     <nav
       class="navbar navbar-expand-lg navbar-light pt-3 bg-first position-fixed top-0 start-0 w-100 shadow-sm"
     >
@@ -73,7 +74,8 @@
         </div>
       </div>
     </nav>
-    <div class="container position-relative text-center">
+
+    <main class="container position-relative text-center">
       <header class="position-relative text-center text-white mb-1">
         <img src="./images/person(2).png" alt="" height="500" />
         <div class="position-relative top-50 start-50 translate-middle-x w-100 px-3">
@@ -83,7 +85,10 @@
       </header>
       <h2 class="display-6 pt-5">Most Popular</h2>
 
-      <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row py-4" id="new">
+      <section
+        class="d-flex justify-content-between align-items-center flex-column flex-lg-row py-4"
+        id="new"
+      >
         <div class="card m-2">
           <a href="./product.html">
             <img src="./images/bag(2).png" alt="Product" class="card-img-top" />
@@ -123,9 +128,10 @@
             <small class="text-secondary">USD 10$</small>
           </div>
         </div>
-      </div>
-      <a href="./productlist.html" class="btn btn-outline-dark my-5">View All Products</a>
-      <div class="d-flex justify-content-between align-items-center flex-column flex-lg-row my-5">
+      </section>
+
+      <a href="./productlist.html" class="btn btn-outline-dark mt-5">View All Products</a>
+      <section class="d-flex justify-content-between align-items-center flex-column flex-lg-row my-5">
         <div class="position-relative m-2">
           <img src="./images/full(2).png" height="300" alt="" />
           <a href="#" class="btn btn-light position-absolute start-0 bottom-0 ms-2 mb-2 d-block">Suits</a>
@@ -140,14 +146,16 @@
           <img src="./images/full(4).png" height="300" alt="" />
           <a href="#" class="btn btn-light position-absolute start-0 bottom-0 ms-2 mb-2 d-block">Suits</a>
         </div>
-      </div>
-      <div class="row text-start align-items-center gy-1 my-5">
+      </section>
+
+      <!-- Brand Section -->
+      <section class="row text-start align-items-center gy-1 my-5">
         <div class="col-12 col-md-6">
           <img src="./images/person(1).png" alt="" class="w-100 h-100" />
         </div>
         <div class="col-12 col-md-6">
           <div>
-            <h2 class="display-">Brand</h2>
+            <h2 class="display-2">Brand</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta magnam quas expedita officiis,
               culpa quod illo? Vel, sequi harum consequuntur velit aliquid nulla optio, dolore tempora veniam
@@ -156,8 +164,10 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="row text-start align-items-center gy-1 my-5">
+      </section>
+
+      <!-- Awards Section -->
+      <section class="row text-start align-items-center gy-1 my-5">
         <div class="col-12 col-md-6">
           <div>
             <h2 class="display-4">Awards</h2>
@@ -172,27 +182,18 @@
         <div class="col-12 col-md-6">
           <img src="./images/person(2).png" alt="" class="w-100 h-100" />
         </div>
-      </div>
-      <section class="my-5 mx-auto py-5" style="max-width: 25em">
-        <h2>Subscribe To our Newsletter</h2>
-        <form action="" class="d-flex my-4">
-          <input type="search" placeholder="Your Email..." class="form-control me-3" />
-          <button class="btn btn-outline-dark" type="submit">Subscribe</button>
-        </form>
       </section>
-      <nav class="navbar navbar-expand-lg navbar-light bg-first position-fixed top-0 start-0 w-100">
-        <div class="container position-relative text-center">
-          <!-- news letter section -->
-        </div>
-      </nav>
 
-      <header class="position-relative text-center text-white mb-5">
+      <!-- new Arrivals section -->
+      <section class="position-relative text-center text-white mb-5">
         <img src="./images/rio-light.jpg" class="w-100" alt="" />
         <div class="position-absolute top-50 start-50 translate-middle-x w-100 px-3">
           <h1 class="display-2 fw-normal text-light">New Arrivals</h1>
         </div>
-      </header>
-      <div class="row">
+      </section>
+
+      <!-- Clothing section -->
+      <section class="row">
         <div class="col-4 col-lg-3 text-start">
           <h3>Clothing</h3>
           <ul class="nav flex-column">
@@ -233,7 +234,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-8 col-lg-9 d-flex flex-wrap justify-content-space-evenly">
+        <div class="col-8 col-lg-9 d-flex flex-wrap justify-content-between">
           <div class="card my-2 mx-1">
             <a href="./product.html">
               <img src="./images/jacker(3).png" class="bg-first card-img-top" height="250" alt="" />
@@ -289,7 +290,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <!-- select bag Size section  -->
       <section class="row py-5 g-5">
         <div class="col-12 col-lg-6">
@@ -421,6 +423,58 @@
         </div>
       </section>
 
+      <!-- You may also like section -->
+      <section>
+        <h2 class="display-6 pt-5 text-center">You May Also Like</h2>
+        <div class="d-flex justify-content-center flex-wrap my-5">
+          <div class="card m-2">
+            <a href="#">
+              <img src="./images/bag(1).png" height="300" alt="Product" class="card-img-top" />
+            </a>
+            <dvi class="card-body"
+              ><p class="card-text fw-bold">Gray Bag</p>
+              <small class="text-secondary">USD 200$</small></dvi
+            >
+          </div>
+          <div class="card m-2">
+            <a href="#">
+              <img src="./images/bag(2).png" height="300" alt="Product" class="card-img-top" />
+            </a>
+            <dvi class="card-body"
+              ><p class="card-text fw-bold">Gray Bag</p>
+              <small class="text-secondary">USD 349$</small></dvi
+            >
+          </div>
+          <div class="card m-2">
+            <a href="#">
+              <img src="./images/bag(3).png" height="300" alt="Product" class="card-img-top" />
+            </a>
+            <dvi class="card-body"
+              ><p class="card-text fw-bold">Purple Bag</p>
+              <small class="text-secondary">USD 300$</small></dvi
+            >
+          </div>
+          <div class="card m-2">
+            <a href="#">
+              <img src="./images/bag(4).png" height="300" alt="Product" class="card-img-top" />
+            </a>
+            <dvi class="card-body"
+              ><p class="card-text fw-bold">Black Bag</p>
+              <small class="text-secondary">USD 149$</small></dvi
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter section -->
+      <nav class="mb-5 mx-auto pb-5" style="max-width: 25em">
+        <h2>Subscribe To our Newsletter</h2>
+        <form action="" class="d-flex my-4">
+          <input type="search" placeholder="Your Email..." class="form-control me-3" />
+          <button class="btn btn-outline-dark" type="submit">Subscribe</button>
+        </form>
+      </nav>
+
       <hr />
       <footer class="d-flex justify-content-between my-5 text-start flex-wrap">
         <ul class="nav flex-column">
@@ -429,7 +483,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="#" class="nav-link text-muted">Clothin</a>
+            <a href="#" class="nav-link text-muted">Clothing</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link text-muted">Shoes</a>
@@ -490,7 +544,7 @@
           </li>
         </ul>
       </footer>
-    </div>
+    </main>
     <script src="./scripts/jquery-3.6.1.min.js"></script>
     <script src="./scripts/script.js"></script>
     <script src="./bootstrap-5.2/bootstrap.min.js"></script>
