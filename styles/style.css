@@ -1,3 +1,9 @@
+:root {
+  --bg-first: #f6fff7;
+}
+.bg-first {
+  background-color: var(--bg-first);
+}
 .navbar {
   z-index: 9;
 }
