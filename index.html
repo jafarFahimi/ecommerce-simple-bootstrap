@@ -290,7 +290,39 @@
           </div>
         </div>
       </div>
-
+      <!-- select bag Size section  -->
+      <section class="row py-5 g-5">
+        <div class="col-12 col-lg-6">
+          <img
+            src="./images/person(1).png"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+            alt=""
+            class="m-1 w-100 sliderMainImage"
+          />
+          <div class="d-flex m-3 justify-content-start">
+            <img width="60" src="./images/bag(1).png" alt="" class="m-1 sliderThumb" />
+            <img width="60" src="./images/bag(3).png" alt="" class="m-1 sliderThumb" />
+            <img width="60" src="./images/bag(4).png" alt="" class="m-1 sliderThumb" />
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+          <h2 class="mt-5" id="productName">Keeper Coat</h2>
+          <small class="text-muted"> Article: 032555 </small>
+          <h4 class="my-4">USD <span id="price">899</span>$</h4>
+          <label for="selectSize" class="text-muted">Size:</label>
+          <select name="selectSize" id="size" class="form-select w-50 my-1">
+            <option selected>S</option>
+            <option value="1">M</option>
+            <option value="2">L</option>
+            <option value="3">XL</option>
+          </select>
+          <div class="g-grid my-4">
+            <button class="btn btn-lg btn-dark" type="button" id="bagBtn">Add to Bag</button>
+          </div>
+        </div>
+      </section>
+      
       <hr />
       <footer class="d-flex justify-content-between my-5 text-start flex-wrap">
         <ul class="nav flex-column">
