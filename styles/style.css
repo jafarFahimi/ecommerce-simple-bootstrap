@@ -17,6 +17,7 @@ body {
 .sliderMainImage {
   cursor: pointer;
 }
+
 @keyframes fade {
   0% {
     opacity: 0;
@@ -27,6 +28,7 @@ body {
 }
 @media (max-width: 1020px) {
   #newsletter form input {
+    text-align: start !important;
     margin: 1rem 0;
   }
   #newsletter {
@@ -34,8 +36,12 @@ body {
   }
 }
 @media (max-width: 350px) {
+  .card-img-clothing {
+    height: 200px !important;
+    width: 90%;
+  }
   #newsletter > div {
-    width: 100%; 
+    width: 100%;
     padding: 10px 15px !important;
   }
   #newsletter h2 {
