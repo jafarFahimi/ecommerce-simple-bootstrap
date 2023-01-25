@@ -25,3 +25,20 @@ body {
     opacity: 1;
   }
 }
+@media (max-width: 1020px) {
+  #newsletter form input {
+    margin: 1rem 0;
+  }
+  #newsletter {
+    width: 100% !important;
+  }
+}
+@media (max-width: 350px) {
+  #newsletter > div {
+    width: 100%; 
+    padding: 10px 15px !important;
+  }
+  #newsletter h2 {
+    font-size: 1.4rem;
+  }
+}
