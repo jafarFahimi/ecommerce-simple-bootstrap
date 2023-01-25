@@ -18,6 +18,11 @@ body {
   cursor: pointer;
 }
 
+.active-filter-btn {
+  background-color: var(--bg-first) !important;
+  border: var(--bg-first) !important;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
